@@ -1,0 +1,53 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f9ff;
+    direction: rtl;
+}
+
+.container {
+    background-color: #cce6ff;
+    border: 5px solid #0077cc;
+    border-radius: 20px;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+@media (max-width: 768px) {
+    .box {
+      padding: 15px;
+      font-size: 13px;
+      line-height: 2; /* زيادة التباعد بين السطور */
+      min-height: 220px; /* زيادة طول البوكس */
+      border-radius: 10px;
+    }
+  }
