@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>خدماتنا</title>
+  <link rel="stylesheet" href="style(1).css">
+  <script>
+    function goToBooking(serviceKey) {
+      const services = {
+        mosque: "تنظيف مساجد - مدارس",
+        palace: "تنظيف بيوت - فلل - قصور",
+        shops: "تنظيف محلات تجارية",
+        furniture: "غسيل مفروشات",
+        water: "تنظيف خزانات المياه"
+      };
+      const selectedService = services[serviceKey];
+      localStorage.setItem("selectedService", selectedService);
+      window.location.href = "booking.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="colored-box">خدماتنا</div>
+
+  <div class="services-container">
+    <div class="service-box" onclick="goToBooking('mosque')">
+      <img src="images/mosque.png" alt="تنظيف مساجد - مدارس">
+      <p>تنظيف مساجد - مدارس</p>
+    </div>
+    <div class="service-box" onclick="goToBooking('palace')">
+      <img src="images/houses.png" alt="تنظيف بيوت - فلل - قصور">
+      <p>تنظيف بيوت - فلل - قصور</p>
+    </div>
+    <div class="service-box" onclick="goToBooking('shops')">
+      <img src="images/shops.png" alt="تنظيف محلات تجارية">
+      <p>تنظيف محلات تجارية</p>
+    </div>
+    <div class="service-box" onclick="goToBooking('furniture')">
+      <img src="images/furniture.png" alt="غسيل مفروشات">
+      <p>غسيل مفروشات</p>
+    </div>
+    <div class="service-box" onclick="goToBooking('water')">
+      <img src="images/water-tanks.png" alt="تنظيف خزانات المياه">
+      <p>تنظيف خزانات المياه</p>
+    </div>
+  </div>
+
+  <div class="footer">جميع الحقوق محفوظة © 2025</div>
+</body>
+</html>
